@@ -2,14 +2,14 @@ import { useState } from 'react';
 
 // Enhanced card data with more variety and humor
 const cardData = [
-  { id: 1, name: "Naughty Nick", type: "Teddy", attack: 3, defense: 2, ability: "Mooning: Stun an enemy teddy for 1 turn", description: "His full moon always rises at the worst time." },
-  { id: 2, name: "Sassy Sarah", type: "Teddy", attack: 2, defense: 4, ability: "Gossip: Reveal one random card in your opponent's hand", description: "She knows all your dirty secrets, and she's not afraid to share." },
-  { id: 3, name: "Boozy Barry", type: "Teddy", attack: 4, defense: 1, ability: "Beer Goggles: Confuse an enemy teddy, reducing its attack by 2", description: "He's not an alcoholic, he's a fun-coholic!" },
-  { id: 4, name: "Kinky Kelly", type: "Teddy", attack: 3, defense: 3, ability: "Whips and Chains: Immobilize an enemy teddy for 1 turn", description: "She'll tie you up in knots, literally and figuratively." },
-  { id: 5, name: "Pillow Fight", type: "Action", effect: "Deal 2 damage to an enemy teddy", description: "It's all fun and games until someone loses a button eye." },
-  { id: 6, name: "Teddy Tequila", type: "Item", effect: "Increase a teddy's attack by 2 but decrease its defense by 1", description: "Liquid courage with a fuzzy aftertaste." },
-  { id: 7, name: "Hangover from Hell", type: "Action", effect: "Reduce all teddies' attack and defense by 1 for 1 turn", description: "The morning after is always worse when you're stuffed with cotton." },
-  { id: 8, name: "Fluffy Handcuffs", type: "Item", effect: "Prevent an enemy teddy from attacking for 1 turn", description: "For when you want to be naughty but still cuddly." },
+  { id: 1, name: "Naughty Nick", type: "Teddy", attack: 3, defense: 2, ability: "Mooning: Stun an enemy teddy for 1 turn", description: "His full moon always rises at the worst time.", image: "/images/cards/naughty-nick.jpg" },
+  { id: 2, name: "Sassy Sarah", type: "Teddy", attack: 2, defense: 4, ability: "Gossip: Reveal one random card in your opponent's hand", description: "She knows all your dirty secrets, and she's not afraid to share.", image: "/images/cards/sassy-sarah.jpg" },
+  { id: 3, name: "Boozy Barry", type: "Teddy", attack: 4, defense: 1, ability: "Beer Goggles: Confuse an enemy teddy, reducing its attack by 2", description: "He's not an alcoholic, he's a fun-coholic!", image: "/images/cards/boozy-barry.jpg" },
+  { id: 4, name: "Kinky Kelly", type: "Teddy", attack: 3, defense: 3, ability: "Whips and Chains: Immobilize an enemy teddy for 1 turn", description: "She'll tie you up in knots, literally and figuratively.", image: "/images/cards/kinky-kelly.jpg" },
+  { id: 5, name: "Pillow Fight", type: "Action", effect: "Deal 2 damage to an enemy teddy", description: "It's all fun and games until someone loses a button eye.", image: "/images/cards/pillow-fight.jpg" },
+  { id: 6, name: "Teddy Tequila", type: "Item", effect: "Increase a teddy's attack by 2 but decrease its defense by 1", description: "Liquid courage with a fuzzy aftertaste.", image: "/images/cards/teddy-tequila.jpg" },
+  { id: 7, name: "Hangover from Hell", type: "Action", effect: "Reduce all teddies' attack and defense by 1 for 1 turn", description: "The morning after is always worse when you're stuffed with cotton.", image: "/images/cards/hangover-from-hell.jpg" },
+  { id: 8, name: "Fluffy Handcuffs", type: "Item", effect: "Prevent an enemy teddy from attacking for 1 turn", description: "For when you want to be naughty but still cuddly.", image: "/images/cards/fluffy-handcuffs.jpg" },
 ];
 
 const GameLogic = () => {

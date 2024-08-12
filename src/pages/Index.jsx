@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import GameLogic from '../game/GameLogic';
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 const Index = () => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -19,7 +20,10 @@ const Index = () => {
         <CardDescription className="text-xs">{card.type}</CardDescription>
       </CardHeader>
       <CardContent className="p-2">
-        <p className="text-xs">{card.ability || card.effect}</p>
+        <AspectRatio ratio={3/4} className="bg-muted">
+          <img src={card.image} alt={card.name} className="rounded-sm object-cover" />
+        </AspectRatio>
+        <p className="text-xs mt-2">{card.ability || card.effect}</p>
         {card.type === 'Teddy' && (
           <p className="text-xs mt-1">ATK: {card.attack} | DEF: {card.defense}</p>
         )}
